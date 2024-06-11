@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <title>Hii-Fit</title>
+  <link rel="stylesheet" href="Styles/style.css">
+  <link rel="stylesheet" href="Styles/bmi.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/f96071fac1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="main-header">
+    <div class="info-nav">
+      <p><span><i class="fa-solid fa-location-dot"></i></span>lagos island, lekki scheme</p>
+      <p><span><i class="fa-regular fa-clock"></i></span>mon-fri: 09:00am-18:00pm | sat-sun closed</p>
+      <p><span><i class="fa-solid fa-phone"></i></span>+2349017912210</p>
+    </div>
+    <nav>
+      <div class="logo">
+        <img src="images/muscle.png" alt="logo">
+        <h1>HiiFit</h1>
+      </div>
+      <div class="navList">
+        <ul>
+          <li><a href="#" class="navLinks">membership</a></li>
+          <li><a href="#" class="navLinks">bmi calculator</a></li>
+          <li><a href="#" class="navLinks">our team</a></li>
+          <li><a href="#" class="navLinks">about us</a></li>
+          <li><a href="#" class="navLinks">product</a></li>
+          <li><a href="#" class="navLinks">contact us</a></li>
+        </ul>
+      </div>
+      <div class="hamburger">
+        <div class="bars"></div>
+        <div class="bars"></div>
+        <div class="bars"></div>
+      </div>
+    </nav>
+  </header>
+    <main>
+
+      <div class="header">
+        <div class="header_deatils">
+          <h1>calculate Bmi</h1>
+        </div>
+      </div>
+
+      <div class="Bmiheading">
+        <img src="images/gym.png" alt="illustration">
+        <h2>calculate your <span>Bmi</span></h2>
+        <p>Test your limit with a great expert with latest exercise trend.</p>
+      </div>
+
+      <div class="BmiSectionCon_Item">
+        <div class="BmiSectionCon_ItemImgCon">
+          <img src="images/crew8.png" alt="illustration">
+        </div>
+        <div class="BmiBodytypeCon">
+          <div class="BmiBodytypeConChildOne">
+            <h2>get bmi <span>calculator</span></h2>
+            <p>With this feature, your visitors can determine their body
+               mass index in a few clicks with the intuitive BMI calculator
+                that can be easily accessible on any of the pages of this 
+                amazing website.
+            </p>
+          </div>
+          <div class="BmiBodytypeConChildTwo">
+            <table>
+              <tr>
+                <th>bmi</th>
+                <th>weight status</th>
+              </tr>
+    
+              <tr>
+                <td>Below 18.5</td>
+                <td>Underweight</td>
+              </tr>
+    
+              <tr>
+                <td>18.5 - 24.9</td>
+                <td>Healthy</td>
+              </tr>
+    
+              <tr>
+                <td>25.0 - 29.9</td>
+                <td>Overweight</td>
+              </tr>
+            <tr>
+                <td>30.0 - and Above</td>
+                <td>Obese</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="caculatorCon">
+        <div class="calculatorinput">
+    
+          <div class="weightCon calculateItem">
+            <label for="weight">weight(kg)</label>
+            <input type="number" name="weight" id="weight" placeholder="enter your weight">
+          </div>
+    
+          <div class="heightCon calculateItem">
+            <label for="height">height(cm)</label>
+            <input type="number" name="height" id="height" placeholder="enter your height">
+          </div>
+          <div class="calculatebtn calculateItem">
+            <label for="bmibtn" id="bmibtn">check</label>
+            <button type="submit" name="bmibtn" onclick="calculateBody()">calculate BMI</button>
+          </div>
+    
+        </div>
+        <div class="bmiresult" id="result">
+    
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer_wrapper">
+        <div class="footer_items footer_itemOne">
+          <h1>Hii-Fit</h1>
+          <p>We committed to provide you with a supportive environment, top-nocth
+            equipment, and expert guidance to help you achieve your fitness goals.
+            whatever you are looking to build muscle, lose weight, or improve your overall
+            health, we'ar here ti support you every step of the way.
+          </p>
+          <p>At our gym we believe that fitness is not just about physical strenght,
+            but also about mental resilience and overall well-being.
+          </p>
+        </div>
+        <div class="footer_items footer_itemTwo">
+          <h1>contact us</h1>
+          <p><span>A:</span> lekki lagos island</p>
+          <p><span>P:</span> 00000000</p>
+          <p><span>C:</span> 00000000</p>
+          <p><span>E:</span> Example@gmail.com</p>
+        </div>
+        <div class="footer_items footer_itemThree">
+          <h1>recent post</h1>
+          <div class="footer_blog">
+            <div class="footer_item_minDiv">
+  
+              <div class="footer_minDiv_content">
+                <img src="images/weddev.jpg" alt="illustration">
+                <div class="footer_minDiv_details">
+                  <a href="">
+                    <h3>the difference between web dev and software engneer.</h3>
+                  </a>
+                  <p>Feb, 2024</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="footer_item_minDiv">
+  
+              <div class="footer_minDiv_content">
+                <img src="images/weddev.jpg" alt="illustration">
+                <div class="footer_minDiv_details">
+                  <a href="">
+                    <h3>the difference between web dev and software engneer.</h3>
+                  </a>
+                  <p>Feb, 2024</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="footer_item_minDiv">
+  
+              <div class="footer_minDiv_content">
+                <img src="images/weddev.jpg" alt="illustration">
+                <div class="footer_minDiv_details">
+                  <a href="">
+                    <h3>the difference between web dev and software engneer.</h3>
+                  </a>
+                  <p>Feb, 2024</p>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+  
+            
+        </div>
+      </div>
+      <div class="footer_link">
+        <a href="#">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-google-plus-g"></i>
+        </a>
+      </div>
+    </footer>
+</body>
+</html>

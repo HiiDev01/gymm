@@ -1,0 +1,289 @@
+:root{
+  --heading-font: "Bebas Neue", sans-serif;
+  --main-font:  "Teko", sans-serif;;
+  --para-font:  "Roboto", sans-serif;
+  --heading-color: #DE2121;
+  --main-color: #f5f5f5;
+  --second-color: #e7e7e7;
+  --black-color: #A4A4A4;
+  --para-color: #ececec;
+  --custom-one: #2c2c2c;
+  --custom-two: #4f4f4f;
+  --custom-three: #8a8a8a;
+  --custom-four: #bfbfbf;
+}
+.main-header{
+  height: 0%;
+}
+
+.header{
+  width: 100%;
+  min-height: 20vh;
+  background-image: linear-gradient(to right, rgba(0,0,0,0.62),rgba(0,0,0,0.32)),url(/images/ser.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.header_deatils{
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  color: whitesmoke;
+}
+.header_deatils h1{
+  font-family: var(--para-font);
+  color: var(--black-color);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 4rem;
+  background: linear-gradient(to right, rgba(0,0,0,0.52),rgba(0,0,0,0.52)),url(/images/ser.jpg);
+  background-size: cover;
+  background-position: left;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.Bmiheading{
+  padding: 2% 5%;
+  text-align: center;
+}
+.Bmiheading img{
+  transform: rotate(45deg);
+  width: 50px;
+}
+.Bmiheading h2{
+  font-size: 2.5rem;
+  color:  var(--black-color);
+  text-transform: uppercase;
+  font-family: var(--heading-font);
+  font-weight: 600;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  margin: 0px 0px 5px;
+}
+.Bmiheading h2 span{
+  color: var(--heading-color);
+}
+.Bmiheading p{
+  font-family: var(--para-font);
+  color: var(--black-color);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/****************************************this is the end of sectionTHREE styling***************************/
+.BmiSectionCon{
+  width: 100%;
+  min-height: 100vh;
+  padding: 10px 5%;
+}
+.BmiSectionCon_Item{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.BmiSectionCon_ItemImgCon{
+  width: 50%;
+  text-align: center;
+}
+
+.BmiSectionCon_ItemImgCon img{
+  width: 80%;
+  height: 80vh;
+  object-fit: contain;
+}
+.BmiBodytypeCon{
+  width: 50%;
+  padding: 10px;
+}
+.BmiBodytypeConChildOne{
+  margin: 0px 0px 10px 0px;
+}
+.BmiBodytypeConChildOne h2{
+  color: var(--black-color);
+  font-size: 2.5rem;
+  font-family: var(--heading-font);
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+.BmiBodytypeConChildOne h2 span{
+  color: var(--heading-color);
+}
+.BmiBodytypeConChildOne p{
+  color: var(--black-color);
+  font-family: var(--para-font);
+  font-size: 1.1rem;
+  line-height: 1.9;
+  font-weight: 400;
+  word-break: break-word;
+}
+.BmiBodytypeConChildTwo table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.BmiBodytypeConChildTwo table tr th{
+  text-align: left;
+  padding: 16px 50px;
+  background-color: var(--heading-color);
+  color: var(--main-color);
+  width: 50%;
+  font-size: 1.3rem;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  font-family: var(--heading-font);
+  text-transform: uppercase;
+  font-weight: 600;
+  border-left: 1px solid rgb(243, 243, 243);
+}
+.BmiBodytypeConChildTwo table tr td{
+  border: 1px solid var(--heading-color);
+  padding: 14px 50px;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: var(--para-font);
+  color: var(--para-font);
+}
+@media screen and (max-width: 967px){
+  .BmiSectionCon{
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px 5%;
+  }
+  .BmiSectionCon_Item{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  .BmiSectionCon_ItemImgCon{
+    width: 100%;
+    text-align: center;
+  }
+  
+  .BmiSectionCon_ItemImgCon img{
+    width: 100%;
+    object-fit: cover;
+  }
+  .BmiBodytypeCon{
+    width: 100%;
+  }
+  .BmiBodytypeConChildOne h2{
+    font-size: 2rem;
+  }
+
+}
+/****************************************************************************************/
+.caculatorCon{
+  width: 100%;
+  min-height: 30vh;
+  background-image: linear-gradient(to top, rgba(61, 1, 1,0.5),rgba(61, 1, 1,0.5)),
+  url(/images/member.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: fixed;
+  padding: 0px 0%;
+}
+.calculatorinput{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: bottom;
+  gap: 10px;
+  min-height: 30vh;
+  width: 100%;
+  padding: 0px 5%;
+}
+.calculateItem{
+  width: calc(100% / 3);
+}
+.calculateItem label{
+  color: var(--main-color);
+  display: block;
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin: 0px 0px 5px 0px;
+}
+.calculateItem input{
+  width: 100%;
+  padding: 16px;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  font-family: var(--para-font);
+  color: var(--black-color);
+  font-weight: 400;
+}
+.calculateItem input::placeholder{
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.calculateItem button{
+  width: 100%;
+  padding: 16px 10px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  font-family: var(--main-font);
+  text-transform: capitalize;
+  background-color: var(--heading-color);
+  color: var(--main-color);
+  border: none;
+  outline: none;
+}
+#bmibtn{
+  visibility: hidden;
+}
+.bmiresult{
+  text-align: center;
+  font-family: var(--heading-font);
+  color: var(--main-color);
+  padding: 10px;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 967px){
+  .caculatorCon{
+    width: 100%;
+    min-height: 30vh;
+    background-image: linear-gradient(to top, rgba(61, 1, 1,0.5),rgba(61, 1, 1,0.5)),
+    url(/images/member.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: fixed;
+    background-attachment: fixed;
+    padding: 25px 10px;
+  }
+  .calculatorinput{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    vertical-align: bottom;
+    gap: 10px;
+    min-height: 30vh;
+    width: 100%;
+    padding: 0;
+  }
+  .calculateItem{
+    width: calc(100%);
+  }
+  .calculateItem input{
+    min-width: 100%;
+    padding: 16px;
+    border: none;
+    outline: none;
+  }
+}
